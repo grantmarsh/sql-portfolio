@@ -3,22 +3,16 @@
 **Dataset:** `dvdrental` (PostgreSQL)  
 **Goal:** Analyze customer behavior, film performance, and store revenue.
 
----
-
 ## Objectives
 - Identify top customers based on revenue  
 - Determine high-performing films and categories  
 - Analyze store revenue and identify inactive locations  
-
----
 
 # Key Skills Applied
 - Writing SQL queries with `JOIN`, `GROUP BY`, and `CASE`  
 - Handling `NULL` values using `COALESCE` and `NULLIF`  
 - Creating `views` for reusable reporting  
 - Data aggregation and ranking  
-
----
 
 # Example Query
 ```sql
