@@ -14,21 +14,16 @@
 - Creating `views` for reusable reporting  
 - Data aggregation and ranking  
 
-# Example Query
-```sql
--- Determine the top 5 film categories by total rental revenue --
-SELECT c.name AS category_name,SUM(p.amount) AS total_revenue
-FROM payment p
-JOIN rental r
-  ON p.rental_id = r.rental_id
-JOIN inventory i
-  ON r.inventory_id = i.inventory_id
-JOIN film f
-  ON i.film_id = f.film_id
-JOIN film_category fc
-  ON f.film_id = fc.film_id
-JOIN category c
-  ON fc.category_id = c.category_id
-GROUP BY c.name
-ORDER BY total_revenue DESC
-LIMIT 5;
+# 1. Customer Analysis
+**Description:**
+This section examines customer spending patterns and engagement using the dvdrental dataset. Key metrics include total revenue, top customers, and average rentals.
+**Insights from SQL Analysis:**
+- Total revenue: $61,212.04
+- Total number of customers: 599
+- Top 10 customers contribution: $1,844.16 (~3% of total revenue)
+- Average rentals per customer: 26.78
+
+**Interpretation:**
+The top 10 customers contribute only 3% of total revenue, indicating there aren’t any heavy spenders dominating sales.
+Out of 599 total customers, revenue is broadly and evenly distributed, suggesting a balanced customer base.
+On average, each customer rents 26.78 films, showing consistent engagement across the dataset.
