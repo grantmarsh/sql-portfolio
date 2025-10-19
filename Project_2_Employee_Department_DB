@@ -1,0 +1,25 @@
+# Project 2: Employee and Department Database
+
+**Goal:** Design a relational database to manage employee and department information and perform data analysis through SQL queries.
+
+# Objectives
+- Create normalized tables for employees, departments, and job roles  
+- Enforce primary key and foreign key constraints  
+- Query data to identify department size, average salaries, and job distribution  
+
+
+# Skills used
+- `CREATE TABLE` statements with constraints  
+- Data insertion and updates (`INSERT`, `UPDATE`)  
+- Querying with `JOIN`, `GROUP BY`, and aggregate functions  
+- Database normalization and relationship design  
+
+# Example Query
+```sql
+-- Find the average salary per department --
+SELECT d.department_name,AVG(e.salary) AS avg_salary
+FROM employees e
+JOIN departments d 
+  ON e.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY avg_salary DESC;
