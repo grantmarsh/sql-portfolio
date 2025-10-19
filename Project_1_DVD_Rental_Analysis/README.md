@@ -8,7 +8,7 @@
 - Determine high-performing films and categories  
 - Analyze store revenue and identify inactive locations  
 
-# Key Skills Applied
+# Skills Used
 - Writing SQL queries with `JOIN`, `GROUP BY`, and `CASE`  
 - Handling `NULL` values using `COALESCE` and `NULLIF`  
 - Creating `views` for reusable reporting  
