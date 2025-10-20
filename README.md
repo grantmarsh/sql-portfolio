@@ -1,5 +1,6 @@
 # sql-portfolio
-A collection of SQL and Power BI projects analyzing real-world data. Includes work with the dvdrental database, customer and sales insights, and business reporting dashboards.
+This is my first data analytics portfolio, created to demonstrate my skills in SQL and Power BI outside of the classroom. My goal for this portfolio is to apply what I’ve learned in real-world style projects by building databases, writing analytical SQL queries, and creating interactive dashboards.
+In this portfolio, I analyze data using the DVD Rental database, create my own database and tables, and build a dashboard in Power BI.
 
 # SQL and Power BI Data Analytics Portfolio
 This portfolio shows my work using **SQL** (PostgreSQL) and **Power BI** to explore, clean, and visualize data.  
