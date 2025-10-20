@@ -3,6 +3,8 @@
 
 **Goal:** Model a HR database designed to track employee information, job roles, and department assignments using table creation, foreign key constraints, and relationships between entities.
 
+**SQL File: Employee_Department_DB**
+
 # Database Structure
 Three tables were created and linked through primary–foreign key relationships:
 - department: contains each department’s name and location.
