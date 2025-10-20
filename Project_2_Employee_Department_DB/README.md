@@ -1,27 +1,29 @@
 
 # Project 2: Employee and Department Database
 
-**Goal:** Design a relational database to manage employee and department information and perform data analysis through SQL queries.
+**Goal:** Model a HR database designed to track employee information, job roles, and department assignments using table creation, foreign key constraints, and relationships between entities.
 
-# Objectives
-- Create tables for employees, departments, and job roles  
-- Enforce primary key and foreign key constraints  
-- Query data to identify department size, average salaries, and job distribution  
+# Database Structure
+Three tables were created and linked through primary–foreign key relationships:
+- department: contains each department’s name and location.
+- job: lists unique job titles across departments.
+- employee: stores employee details (first name, last name, salary, hire date, performance rating, and bonus) while referencing both the department and job tables through foreign keys.
 
+# Business Questions
+1. Which **departments** have the highest average performance ratings?
+2. Which **job** titles have the strongest average performance?
+3. Is there a relationship between **salary** and **performance** rating across the company?
+
+# Department Performance
+HR has the highest average performance rating (4.7), followed by Sales (4.35).
+This suggests HR employees consistently outperform other departments.
+# Job Performance
+HR Coordinator and Data Analyst roles recorded the highest average performance ratings (4.9 and 4.7).
+These findings highlight key roles contributing significantly to overall company success.
+# Salary vs. Performance
+Higher performance ratings generally align with higher salaries, indicating a positive correlation between pay and employee output.
 
 # Skills used
 - `CREATE TABLE` statements with constraints  
-- Data insertion and updates (`INSERT`, `UPDATE`)  
 - Querying with `JOIN`, `GROUP BY`, and aggregate functions  
 - Database normalization and relationship design  
-
-
-# Example Query
-```sql
--- Find the average salary per department --
-SELECT d.department_name,AVG(e.salary) AS avg_salary
-FROM employees e
-JOIN departments d
-  ON e.department_id = d.department_id
-GROUP BY d.department_name
-ORDER BY avg_salary DESC;
